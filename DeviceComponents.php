@@ -1,6 +1,6 @@
 <?php
-// cakephp 1.3とか
-class DeviceComponent extends Object {
+// cakephp 2.x
+class DeviceComponent extends Component {
     var $_ua = '';
     public function __construct() {
         $this->_ua = $_SERVER['HTTP_USER_AGENT'];
