@@ -36,4 +36,8 @@ class DeviceComponent extends Object {
     public function is_smartphone() {
         return ($this->is_ios() || $this->is_android() || $this->is_windows_phone()) ? true : false ;
     }
+    // feature phone はアクセスない前提のサイトなら下記
+    public function is_pc() {
+        return !$this->is_smartphone();
+    }
 }
