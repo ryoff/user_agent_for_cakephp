@@ -28,10 +28,10 @@ class DeviceComponent extends Component {
             $this->_pc_browser = 'Safari';
             $this->_pc_version = $matches[1];
         // ゲーム機
-        } elseif (preg_match('/Nintendo (3DS|WiiU))/', $this->_ua, $matches)) {
+        } elseif (preg_match('/Nintendo (3DS|WiiU)/', $this->_ua, $matches)) {
             $this->_pc_browser = 'Nintendo';
             $this->_pc_version = $matches[1];
-        } elseif (preg_match('/PLAYSTATION (3|Vita))/', $this->_ua, $matches)) {
+        } elseif (preg_match('/PLAYSTATION (3|Vita)/', $this->_ua, $matches)) {
             $this->_pc_browser = 'PLAYSTATION';
             $this->_pc_version = $matches[1];
         // BOT
